@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# File to run the lu benchmark
+
+cd splash2-new/codes/kernels/lu/contiguous_blocks/
+m5 dumpstats
+m5 resetstats
+echo "Begin :P"
+./LU -p4 > LU_4c_128k_res.txt
+echo "Done :D"
+m5 dumpstats
+m5 resetstats
+mv LU_4c_128k_res.txt ~/splash2_result/
+m5 exit
+
