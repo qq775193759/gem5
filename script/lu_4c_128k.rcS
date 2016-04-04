@@ -10,6 +10,5 @@ echo "Begin :P"
 echo "Done :D"
 m5 dumpstats
 m5 resetstats
-mv LU_4c_128k_res.txt ~/splash2_result/
 m5 exit
 
