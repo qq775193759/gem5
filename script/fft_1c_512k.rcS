@@ -6,7 +6,7 @@ cd splash2-new/codes/kernels/fft/
 m5 dumpstats
 m5 resetstats
 echo "Begin :P"
-./FFT -p1 > FFT_1c_128k_res.txt
+./FFT -p1 > FFT_1c_512k_res.txt
 echo "Done :D"
 m5 dumpstats
 m5 resetstats

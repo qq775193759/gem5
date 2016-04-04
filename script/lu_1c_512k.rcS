@@ -6,7 +6,7 @@ cd splash2-new/codes/kernels/lu/contiguous_blocks/
 m5 dumpstats
 m5 resetstats
 echo "Begin :P"
-./LU -p1 > LU_1c_128k_res.txt
+./LU -p1 > LU_1c_512k_res.txt
 echo "Done :D"
 m5 dumpstats
 m5 resetstats

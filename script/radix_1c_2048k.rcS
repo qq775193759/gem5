@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# File to run the radix benchmark
+
+cd splash2-new/codes/kernels/radix/
+m5 dumpstats
+m5 resetstats
+echo "Begin :P"
+./RADIX -p1 > RADIX_1c_2048k_res.txt
+echo "Done :D"
+m5 dumpstats
+m5 resetstats
+m5 exit
+
